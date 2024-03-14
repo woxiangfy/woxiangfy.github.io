@@ -1,9 +1,287 @@
 <!DOCTYPE html>
-<html>
+<html lang='zh-CN'>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>来此加密 - Let&#39;s Encrypt 在线免费申请SSL证书</title>
+    <meta name="description"
+        content="来此加密提供免费的SSL/TLS证书申请,任何人都可以申请免费的多域名证书,泛域名证书.支持Let&#39;s Encrypt,Buypass,Zerossl,Google等多家CA渠道">
+    <link rel="stylesheet" href="//a1.cdn.osfipin.com/site/letsencrypt/style1.css">
+    <link rel="dns-prefetch" href="//api.osfipin.com/" />
+    <link rel="dns-prefetch" href="//letsencrypt.osfipin.com/" />
+    <link rel="shortcut icon" type="image/x-icon" href="//a1.cdn.osfipin.com/site/letsencrypt/favicon.ico">
+</head>
 
 <body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <div class="block block-top">
+        <div class="search bgcolor-a d-flex justify-content-between">
+            <div class="a1">
+                <img src="//a1.cdn.osfipin.com/site/letsencrypt/favicon.ico">
+                <span>拥有一张免费的SSL证书</span>
+            </div>
+            <div class="a2">
+                <a href="javascript:to_user('user/register');" class="btn btn-primary">立即开始</a>
+            </div>
+        </div>
+
+        <h1>在 来此加密</h1>
+        <div class="a3">每个人都可以拥有</div>
+        <div class="a4">
+            <span>域名SSL证书、泛域名证书、多域名证书</span>
+        </div>
+        <a href="javascript:to_user('user/register');" class="btn btn-good a5">免 费 使 用</a>
+
+        <div class="a6 d-flex justify-content-between">
+            <div>
+                <div>10万+</div>
+                <div>免费用户</div>
+            </div>
+            <div>
+                <div>100万+</div>
+                <div>累计证书</div>
+            </div>
+        </div>
+
+        <div class="a7 d-flex justify-content-between">
+            <a href="javascript:to_book();" class="btn btn-info">帮助手册</a>
+            <a href="javascript:to_help();" class="btn btn-info">沟通反馈</a>
+            <a href="javascript:to_user('user/login');" class="btn btn-info">登录</a>
+        </div>
+    </div>
+
+    <div class="block bgcolor-b">
+        <h2>操作简单</h2>
+        <p>简单的操作流程，即使小白也可以轻松申请SSL证书</p>
+        <img src="//a1.cdn.osfipin.com/site/letsencrypt/index-cz.png" alt="来此加密申请证书流程" title="来此加密申请证书流程" />
+    </div>
+
+    <div class="block bgcolor-a">
+        <h2>支持多渠道</h2>
+        <p>Let&#39;s Encrypt Zerossl <a href="https://osfipin.com/article/19890614">Buypass</a> <a
+                href="https://osfipin.com/article/19890615">Google</a></p>
+        <img src="//a1.cdn.osfipin.com/site/letsencrypt/index-ca.png" alt="支持多个CA渠道" title="支持多个CA渠道" />
+    </div>
+
+    <div class="block bgcolor-b">
+        <h2>允许更多域名</h2>
+        <p>可<a href="https://osfipin.com/article/19890619">多域名</a>和泛域名:不再为几十上百个域名SSL证书烦恼</p>
+        <img src="//a1.cdn.osfipin.com/site/letsencrypt/index-ym.png" alt="多域名和泛域名" title="多域名和泛域名" />
+    </div>
+
+    <div class="block bgcolor-a">
+        <h2>强大的扩展</h2>
+        <p>开放的API接口和应用案例,任何人都可以使用</p>
+        <img src="//a1.cdn.osfipin.com/site/letsencrypt/index-api.png" alt="来此加密API接口" title="来此加密API接口" />
+    </div>
+
+    <div class="block bgcolor-b">
+        <h2>对, 来此加密是免费的</h2>
+        <p>95%以上的用户都在免费使用</p>
+        <a href="javascript:to_user('user/register');" class="btn btn-good">开始使用</a>
+    </div>
+    <div class="block bgcolor-a">
+        <h2>来此加密更新日志</h2>
+        <div class="ba">
+            <h4>2024年01月19号</h4>
+            <ul>
+                <li>更新。UI重构。</li>
+                <li>新增。SVIP可直接兑换，支持批量申请批量重申。</li>
+                <li>优化。证书列表页支持分页。</li>
+                <li>优化。支持直接复制证书文本。</li>
+                <li>优化。推荐注册通过链接访问，自动绑定推荐码。</li>
+                <li>新增。可提交社交分享，获得积分。</li>
+                <li>新增。支持工单系统。</li>
+                <li>新增。支持批量删除证书。</li>
+                <li>还有若干优化，请自行体验😄</li>
+            </ul>
+            <h4>2023年07月09号</h4>
+            <ul>
+                <li>修正。部分情况(渠道服务未返回错误)验证失败无提示信息</li>
+                <li>优化。优化算法提升申请速度</li>
+            </ul>
+            <h4>2023年04月12号</h4>
+            <ul>
+                <li>提升。VIP账号同时有效证书最大数量为500</li>
+            </ul>
+            <h4>2022年08月06号</h4>
+            <ul>
+                <li>优化多个域名验证策略,单张证书最多支持20个域名(部分CA)</li>
+            </ul>
+            <h4>2022年07月23号</h4>
+            <ul>
+                <li>优化。首页改版</li>
+                <li>优化。操作提示文本</li>
+                <li>优化。极少情况下证书域名验证失败</li>
+            </ul>
+            <h4>2022年05月19号</h4>
+            <ul>
+                <li>新增。支持Google类型证书申请</li>
+            </ul>
+            <h4>2022年04月23号</h4>
+            <ul>
+                <li>优化。大幅降低因DNS缓存导致的SSL证书申请失败</li>
+            </ul>
+            <h4>2022年02月20号</h4>
+            <ul>
+                <li>新增。支持zerossl和buypass类型证书申请</li>
+            </ul>
+            <h4>2021年11月27号</h4>
+            <ul>
+                <li>系统重构，请自行体验😄</li>
+            </ul>
+            <h4>2021年1月24号</h4>
+            <ul>
+                <li>优化。提升DNS检测效率, 减少部分DNS验证失败的情况</li>
+                <li>新增。证书申请成功奖励积分, 完善奖励逻辑</li>
+                <li>增强。服务器扩容, 提升短时间内申请较多时的处理效率</li>
+            </ul>
+            <h4>2020年8月18号</h4>
+            <ul>
+                <li>完善。免验证流程(此前使用的请重新设置)</li>
+            </ul>
+            <h4>2020年8月13号</h4>
+            <ul>
+                <li>新增。续期免验证(首次设置后，续期无需配置验证信息)</li>
+                <li>新增。证书自动续期</li>
+            </ul>
+            <h4>2020年8月5号</h4>
+            <ul>
+                <li>新增。推荐和积分.</li>
+                <li>优化。细节优化</li>
+            </ul>
+            <h4>2020年5月18号</h4>
+            <ul>
+                <li>修复。部分情况下无法设置手机号</li>
+                <li>新增。在线交流平台.在[使用指引]中进入.</li>
+                <li>新增。更多的消息提醒.</li>
+            </ul>
+            <h4>2020年4月23号</h4>
+            <ul>
+                <li>优化。降低DNS验证缓存影响</li>
+                <li>优化。接口效率提升</li>
+                <li>修复。修复注册页面部分内容未显示</li>
+                <li>优化。优化部分情况下验证失败的问题</li>
+            </ul>
+            <h4>2020年4月8号</h4>
+            <ul>
+                <li>服务器扩容</li>
+                <li>VIP用户证书最多100张, 单张最多8组域名</li>
+                <li>优化验证出错提醒和消息中心</li>
+                <li>可以清除证书密钥</li>
+                <li>微信扫码登录(需先绑定)</li>
+                <li>多个域名验证现在可以逐条验证</li>
+                <li>针对重度用户,增加独立通道功能</li>
+            </ul>
+            <h4>2019年10月26号</h4>
+            <ul>
+                <li>使用VUE重构前端UI。</li>
+            </ul>
+            <h4>2019年8月10号</h4>
+            <ul>
+                <li>新增:域名过期前可短信提醒</li>
+                <li>优化:邮箱帮助提示</li>
+            </ul>
+            <h4>2019年7月31号</h4>
+            <ul>
+                <li>修复:验证码输入大写字符时一直出错(验证码不区分大小写)</li>
+            </ul>
+            <h4>2019年7月26号</h4>
+            <ul>
+                <li>功能新增:支持小程序</li>
+                <li>优化:【我的】页面信息</li>
+            </ul>
+            <h4>2019年7月6号</h4>
+            <ul>
+                <li>优化部分提示方式</li>
+                <li>优化首次注册时的用户体验</li>
+            </ul>
+            <h4>2019年6月20号</h4>
+            <ul>
+                <li>api接口和处理流程优化</li>
+                <li>注册和重置密码流程优化</li>
+                <li>支持提交多域名证书(仅限VIP)</li>
+            </ul>
+            <h4>2019年3月19号</h4>
+            <ul>
+                <li>修复BUG:申请成功,由于重复执行finalizeOrder导致SSL证书"失效"问题</li>
+            </ul>
+            <h4>2018年12月06号</h4>
+            <ul>
+                <li>修复一个重新申请导致无法验证域名的BUG.</li>
+                <li>证书密钥可选EC和RSA方式.</li>
+            </ul>
+            <h4>2018年11月24号</h4>
+            <ul>
+                <li>新版正式上线.</li>
+                <li>验证操作优化,更加直观.</li>
+                <li>使用ECC方式生成证书秘钥.</li>
+                <li>前端界面优化.</li>
+            </ul>
+            <h4>2018年10月13号</h4>
+            <ul>
+                <li>修复http验证时某些情况下一直失败的问题.</li>
+                <li>证书域名验证失败时，发送的邮件增加错误情况说明.</li>
+            </ul>
+            <h4>2018年9月14号</h4>
+            <ul>
+                <li>添加的泛域名自动支持其根域名的使用.</li>
+            </ul>
+            <h4>2018年8月21号</h4>
+            <ul>
+                <li>增加服务器配置SSL参考说明.</li>
+            </ul>
+            <h4>2018年8月08号</h4>
+            <ul>
+                <li>系统重新构建以提升申请效率.</li>
+            </ul>
+            <h4>2018年4月26号</h4>
+            <ul>
+                <li>修复.申请非法(受保护)域名导致他人申请任务中断.</li>
+            </ul>
+            <h4>2018年4月08号</h4>
+            <ul>
+                <li>修复.定时任务因访问异常中断.</li>
+            </ul>
+            <h4>2018年3月30号</h4>
+            <ul>
+                <li>来此加密网站上线</li>
+            </ul>
+        </div>
+    </div>
+    <div class="block bgcolor-b">
+        <p>© 2024 来此加密 .免费SSL证书
+        </p>
+        <p>Let&#39;s Encrypt域名证书.Zerossl免费证书.Buypass TLS证书.Google SSL证书</p>
+        <p>slogan: 免费申请域名SSL证书;申请免费的通配符证书;免费的多域名证书申请</p>
+        <div>
+            <a href="https://osfipin.com/" target="_blank">吠品博客</a>
+            <a href="https://browsehappy.osfipin.com/" target="_blank">快乐浏览</a>
+            <a href="https://mybrowse.osfipin.com/" target="_blank">我的浏览器</a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function to_help() {
+            window.open('https://support.qq.com/products/154534/', '_blank');
+        }
+
+        function to_book() {
+            window.open('https://www.yuque.com/osfipin/letsencrypt/xbdg8y', '_blank');
+        }
+
+        function to_user(url) {
+            window.location.href = '//letsencrypt.osfipin.com/user-0408/' + url;
+        }
+        // 统计代码
+        // var _hmt = _hmt || [];
+        // (function () {
+        //     var hm = document.createElement("script");
+        //     hm.src = "//hm.baidu.com/hm.js?e36c60abcaf4b6376e65ba4111dc07de";
+        //     var s = document.getElementsByTagName("script")[0];
+        //     s.parentNode.insertBefore(hm, s);
+        // })();
+    </script>
 </body>
 
 </html>
