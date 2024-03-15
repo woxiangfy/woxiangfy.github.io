@@ -8,3 +8,5 @@
 
 * [来此加密网站](https://letsencrypt.osfipin.com/)
 * [API接口地址](https://letsencrypt.apifox.cn)
+* [本项目网址 https://woxiangfy.github.io/](https://woxiangfy.github.io/)
+* [另一个网址 https://lcjm.cc/](https://lcjm.cc/)
